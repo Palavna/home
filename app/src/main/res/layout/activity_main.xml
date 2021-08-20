@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/рег"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:text="Регистрация"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+
+        android:id="@+id/imy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="18dp"
+        android:hint="Имя"
+        android:inputType="text"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/рег" />
+
+    <EditText
+
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:hint="Номер телефона"
+        android:inputType="number"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/imy" />
+
+    <EditText
+
+        android:id="@+id/pas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/nom" />
+
+    <EditText
+
+        android:id="@+id/pas1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:hint="Повторите пароль"
+        android:inputType="textPassword"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/pas" />
+
+    <EditText
+
+        android:id="@+id/sekv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Секретный вопрос"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/pas1" />
+
+
+    <EditText
+
+        android:id="@+id/sek2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:hint="Ответ на секретный вопрос"
+        android:inputType="text"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/sekv" />
+
+    <Button
+
+        android:id="@+id/clic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#E48B1F"
+        android:paddingStart="8dp"
+        android:textSize="18dp"
+        android:paddingEnd="8dp"
+        android:clickable="true"
+        android:text="Зарегистрироваться"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sek2"/>
+
+    <Button
+
+        android:id="@+id/uje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="Уже зарегистрированны?"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clic"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@null"
+        android:textColorHint="#E48B1F"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
